@@ -200,12 +200,14 @@ margin-right: 15px;
     flex-wrap: wrap;
     position: absolute;
     color: #fff;
+    align-items: flex-start;
     background: rgba(109,10,211,0.8);
     width: 70%;
-    padding: 2% 5%;
+    padding: 5% 5%;
     margin: 10% 10%;
     border-radius: 5%;
     z-index: 2;
+    height: 70%;
   }
 
   .portafolio div .detalle-proyecto h3{
@@ -214,18 +216,27 @@ margin-right: 15px;
   }
 
   .portafolio div .detalle-proyecto p{
-    margin:5% 5% 18% 0;
     font-size: 15px;
+    align-self: flex-start;
   }
+
+  .portafolio div .detalle-proyecto .skill{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
   .portafolio div .detalle-proyecto span{
     color: #580aaf;
     font-size: 11px;
     border-radius: 12px;
     font-weight: 600;
     padding: 5px 9px;
+    margin: 2% 0;
     background-color: #d1ffa2;
-    margin-right: 3%;
-    margin-bottom: 3%;
   }
 
   .portafolio div:hover > img{
@@ -315,6 +326,7 @@ margin-right: 15px;
     .blog .aside h4{
       border-left: #C4C4C4 solid 4px;
       padding-left: 10px;
+      color: rgb(56, 56, 56);
     }
 
     .blog .aside p{
@@ -370,6 +382,11 @@ margin-right: 15px;
     .blog .articulo:hover h4{
       border-color: #580aaf ;
       cursor: url("./images/cursor2.png"),auto;
+      color: #000;
+    }
+
+    .blog .articulo:hover p{
+      cursor: url("./images/cursor2.png"),auto;
     }
 
     .blog .articulo img{
@@ -408,10 +425,11 @@ margin-right: 15px;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .blog .flex-column .suscribete form .deco{
-      padding: 15px 15px;
+      padding: 4% 3%;
       border: #C0C0C0 solid 1px;
     }
 
@@ -432,6 +450,7 @@ margin-right: 15px;
     .contacto .contacto-form{
       justify-content: center;
       color: #262626;
+      font-family: Ra;
     }
 
     .contacto .contacto-form input{
@@ -449,7 +468,6 @@ margin-right: 15px;
 
     .contacto .contacto-form input:focus,.contacto .contacto-form select:focus,.contacto .contacto-form textarea:focus{
       border-color: #580aaf;
-      
       outline: 0 none;
     }
 
@@ -471,6 +489,7 @@ margin-right: 15px;
       width: 86%;
       padding: 2%;
       border: #C0C0C0 solid 1px ;
+    font-family: 'Raleway', sans-serif;
     }
     .contacto-form button{
       margin: 5% auto;
@@ -532,7 +551,7 @@ margin-right: 15px;
       align-items: flex-start;
     }
 
-    @media (max-width: 924px) {
+    @media (max-width: 954px) {
       .blog .nuevo-rey {
         width: 86%;
         margin-bottom: 20px;
@@ -563,6 +582,38 @@ margin-right: 15px;
         width: 80%;
         margin: auto;
       }
+
+
+      .portafolio div{
+        width: 40%;
+      }
+  
+      .portafolio div img{
+        width: 100%;
+      }
+
+      .portafolio div .detalle-proyecto p {
+        font-size: 16px;
+      }
+
+      .portafolio div .detalle-proyecto .skill{
+        align-self: flex-end;
+        justify-self: flex-end;
+      }
+
+      .portafolio div .detalle-proyecto .skill span {
+       font-size: 15px;
+       padding: 2% 6%;
+      }
+
+      .services{
+        padding: 0;
+      }
+  
+      .services .ser-articulo{
+        width: 80%;
+      }
+  
 
     }
     @media (max-width:635px) {
@@ -601,6 +652,80 @@ margin-right: 15px;
         font-weight: 600;
       }
       
-     
+      .blog .flex-column{
+        width: 86%;
+      }
+
+
+      .blog .flex-column .css3 .aside,.blog .flex-column .engine .aside{
+        width: 60% ;
+      }
+
+      .blog .flex-column .css3 img, .blog .flex-column .engine img{
+        width: 30% ;
+      }
+
+      .blog .flex-column .css3 .aside p,.blog .flex-column .engine .aside p{
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      .blog .suscribete form{
+        margin-top: 15px;
+      }
+
+      header .portada .presentacion{
+      text-align: center;
+      }
+     header .portada .presentacion div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+     }
+     header .portada .presentacion div button{
+      margin:5% auto;
+     }
+      
+
+     header .portada .presentacion div .redes{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+     }
+    header .portada .presentacion div .redes img{
+      margin: 0;
+    }
+
+    .portafolio div{
+      width: 90%;
+    }
+
+    .portafolio div img{
+      width: 100%;
+    }
+
+    .portafolio div .detalle-proyecto h3{
+  font-size: 30px;
+  text-align: center;
+    }
+
+    .portafolio div .detalle-proyecto p {
+      text-align: center;
+      margin-bottom: 26%;
+      font-size: 18px;
+    }
+
+    .portafolio div .detalle-proyecto .skill span {
+     font-size: 15px;
+     padding: 2% 6%;
+      font-size: 20px;
+    }
+
+
+    .services .ser-articulo{
+      width: 80%;
+    }
+
 
     }
