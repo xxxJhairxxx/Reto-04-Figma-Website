@@ -727,5 +727,13 @@ margin-right: 15px;
       width: 80%;
     }
 
+    .contacto-form input{
+      width: 80%;
+    }
+
+    .contacto-form textarea{
+      background-color: #fff;
+    }
+
 
     }
