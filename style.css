@@ -206,10 +206,13 @@ margin-right: 15px;
   .portafolio div{
     margin-bottom: 10px;
     position: relative;
+    border: #D1FFA2 solid 4px;
   }
 
   .portafolio div img{
     z-index: 1;
+    width: 100%;
+    height: 100%;
   }
 
   .portafolio div .detalle-proyecto{
@@ -225,6 +228,7 @@ margin-right: 15px;
     border-radius: 5%;
     z-index: 2;
     height: 70%;
+    border:none;
   }
 
   .portafolio div .detalle-proyecto h3{
@@ -244,6 +248,7 @@ margin-right: 15px;
     flex-wrap: wrap;
     margin-bottom: 0;
     align-self: flex-end;
+    border:none
   }
 
   .portafolio div .detalle-proyecto span{
@@ -256,6 +261,9 @@ margin-right: 15px;
     background-color: #d1ffa2;
   }
 
+  .portafolio div:hover{
+    border-color:#00CF95;
+  }
   .portafolio div:hover > img{
     filter: brightness(50%);
     cursor: url("./images/cursor2.png"),auto;
