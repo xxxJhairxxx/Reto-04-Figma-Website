@@ -460,14 +460,15 @@ margin-right: 15px;
     }
 
 
-    .contacto .contenedor{
-      max-width: 700px;
+    .contacto {
+      width: 95%;
   }
 
+
     .contacto .contacto-form{
+      max-width: 700px;
       justify-content: center;
       color: #262626;
-      font-family: Ra;
     }
 
     .contacto .contacto-form input{
@@ -496,7 +497,6 @@ margin-right: 15px;
       border: #C0C0C0 solid 1px ;
     }
     .contacto .contacto-form select, option{
-            
       color : #736f6f;
     }
 
@@ -568,6 +568,8 @@ margin-right: 15px;
       align-items: flex-start;
     }
 
+
+
     @media (max-width: 954px) {
       .blog .nuevo-rey {
         width: 86%;
@@ -623,16 +625,18 @@ margin-right: 15px;
        padding: 2% 6%;
       }
 
-      .services{
-        padding: 0;
-      }
   
       .services .ser-articulo{
         width: 80%;
       }
+
   
 
     }
+
+
+
+
     @media (max-width:635px) {
 
       .titulo-section{
