@@ -213,7 +213,7 @@ margin-right: 15px;
   }
 
   .portafolio div .detalle-proyecto{
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     position: absolute;
     color: #fff;
@@ -691,6 +691,10 @@ margin-right: 15px;
         margin-top: 15px;
       }
 
+      .blog .flex-column .suscribete form input{
+        width: 50%;
+      }
+
       header .portada .presentacion{
       text-align: center;
       }
@@ -700,6 +704,8 @@ margin-right: 15px;
       width: 100%;
       justify-content: center;
      }
+
+    
      header .portada .presentacion div button{
       margin:5% auto;
      }
@@ -723,20 +729,22 @@ margin-right: 15px;
     }
 
     .portafolio div .detalle-proyecto h3{
-  font-size: 30px;
-  text-align: center;
+    font-size: 30px;
+    text-align: center;
     }
 
     .portafolio div .detalle-proyecto p {
       text-align: center;
-      margin-bottom: 26%;
       font-size: 18px;
     }
 
+    .portafolio div .detalle-proyecto .skill{
+      margin-bottom: 0;
+    }
+
     .portafolio div .detalle-proyecto .skill span {
-     font-size: 15px;
+     font-size: 12px;
      padding: 2% 6%;
-      font-size: 20px;
     }
 
 
