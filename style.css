@@ -107,7 +107,10 @@ nav .burger img{
     margin-right: auto;
 }
 
-.presentacion div button:hover{
+.presentacion div button{
+  cursor: url("./images/cursor2.png"),auto;
+}
+.presentacion div {
   cursor: url("./images/cursor2.png"),auto;
 }
 
